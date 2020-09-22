@@ -182,19 +182,19 @@
 					   align-items: center; 
 					   justify-content: space-between;">
 
-						<h3 class="card-title" style="flex:0.9"><b> 
+						<h3 class="card-title" style="flex:1"><b> 
 							<?php if(isset($_GET["id"])){
 								echo "UPDATE DOCTOR";
 							}else{echo "ADD DOCTOR";}?>
 						</b></h3>
 
-						<!-- View Admin Table -->
-						<h3 class="card-title" style="flex:0.1">
-							<a href="?page=view-doctor" class="btn btn-info">View All</a>
+						<!-- View Doctor Table -->
+						<h3 class="card-title">
+							<a href="?page=view-doctor" class="btn btn-info" title="view doctor"> <i class="fas fa-eye"></i> </a>
 						</h3>
 					</div>
 
-					<!-- ADD ADMIN FORM -->
+					<!-- ADD Doctor FORM -->
 					<form action="#" method="POST" enctype="multipart/form-data" 
 						<?php if(!empty($_GET["id"])){ ?>
 								onsubmit="return updateForm()"

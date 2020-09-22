@@ -203,15 +203,15 @@
 					   align-items: center; 
 					   justify-content: space-between;">
 
-						<h3 class="card-title" style="flex:0.9"><b> 
+						<h3 class="card-title" style="flex:1"><b> 
 							<?php if(isset($_GET["id"])){
 								echo "UPDATE REGISTERED PATIENT";
 							}else{echo "REGISTER PATIENT";}?>
 						</b></h3>
 
-						<!-- View Admin Table -->
-						<h3 class="card-title" style="flex:0.1">
-							<a href="?page=view-patient" class="btn btn-info">View All</a>
+						<!-- View Patient Table -->
+						<h3 class="card-title">
+							<a href="?page=view-patient" class="btn btn-info" title="view patient"> <i class="fas fa-eye"></i> </a>
 						</h3>
 					</div>
 

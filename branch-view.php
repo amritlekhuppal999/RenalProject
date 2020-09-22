@@ -28,18 +28,25 @@
 						   align-items: center; 
 						   justify-content: space-between;">
 						
-						<div class="card-tools" style="flex:0.9">
-							<div class="input-group input-group-sm" style="width: 350px;">
+						<!-- Search Icon -->
+		                <span class="btn btn-light ser-icon">
+							<i class="fas fa-search"></i>
+						</span>
+						
+						<div class="card-tools" style="flex:1">
+							<div class="input-group input-group-sm ser-bar-resize" style="width: 350px;">
 								<input type="text" name="table_search" class="form-control" placeholder="Search by Branch Name" id="dy-search" onkeyup="dySearch()">
-
-		                    <!-- <div class="input-group-append">
+							<!-- <div class="input-group-append">
 		                       	<button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
 		                       </div> -->
 		                   </div>		
-		                </div>
+		                </div>	
 
-		                <h3 class="card-title" style="flex:0.1">
-							<a href="?page=add-branch" class="btn btn-info">Add New</a>
+		                
+		                <h3 class="card-title">
+		                	<a href="?page=add-branch" class="btn btn-info">
+		                		<i class="fas fa-user-plus"></i>
+		                	</a>
 						</h3>
 		           </div>
 

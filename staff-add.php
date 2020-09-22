@@ -253,7 +253,7 @@
 								</select>
 
 								<!-- BUTTON LINK -->
-								<a href="" class="btn btn-info" id="select_branch_btn" style="flex: 0.2">Select</a>
+								<a href="" class="btn btn-info" id="select_branch_btn" style="flex: 0.1">Select</a>
 							</div>
 
 							<!-- CARD FOOTER -->
@@ -293,15 +293,15 @@
 						   align-items: center; 
 						   justify-content: space-between;">
 
-							<h3 class="card-title" style="flex:0.9"><b> 
+							<h3 class="card-title" style="flex:1"><b> 
 								<?php if(isset($_GET["id"])){
 									echo "UPDATE STAFF";
 								}else{echo "ADD STAFF";}?>
 							</b></h3>
 
-							<!-- View Admin Table -->
-							<h3 class="card-title" style="flex:0.1">
-								<a href="?page=view-staff" class="btn btn-info">View All</a>
+							<!-- View Staff Table -->
+							<h3 class="card-title">
+								<a href="?page=view-staff" class="btn btn-info" title="view staff"> <i class="fas fa-eye"></i> </a>
 							</h3>
 						</div>
 

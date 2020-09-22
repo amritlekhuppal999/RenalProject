@@ -135,15 +135,15 @@
 					   align-items: center; 
 					   justify-content: space-between;">
 
-						<h3 class="card-title" style="flex:0.9"><b> 
+						<h3 class="card-title" style="flex:1"><b> 
 							<?php if(isset($_GET["id"])){
 								echo "UPDATE BRANCH";
 							}else{echo "ADD BRANCH";}?>
 						</b></h3>
 
-						<!-- View Admin Table -->
-						<h3 class="card-title" style="flex:0.1">
-							<a href="?page=view-branch" class="btn btn-info">View All</a>
+						<!-- View Branch table -->
+						<h3 class="card-title">
+							<a href="?page=view-branch" class="btn btn-info" title="view branch"> <i class="fas fa-eye"></i> </a>
 						</h3>
 					</div>
 
@@ -285,17 +285,17 @@
 						   align-items: center; 
 						   justify-content: space-between;">
 
-							<h3 class="card-title" style="flex:0.9"><b> 
+							<h3 class="card-title" style="flex:1"><b> 
 								Branch Staff</b></h3>
 
-							<!-- View Admin Table -->
-							<h3 class="card-title" style="flex:0.1">
+							<!-- View Staff Table -->
+							<h3 class="card-title" style="">
 								<a href="<?php echo LOCAL_HOME_URL.'?page=add-staff&branch-id='.$_GET["id"]?>" class="btn btn-info" title="add staff"><i class="fas fa-user-plus"></i></a>
 							</h3>
 						</div>
 
 						<!-- CARD BODY -->
-						<div class="card-body">
+						<div class="card-body" style="overflow-x: auto;">
 							
 							<table id="example1" class="table table-bordered table-striped text-center">
 		           		<thead>
