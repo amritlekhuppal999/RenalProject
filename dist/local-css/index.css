@@ -9,3 +9,32 @@ body{
   border-radius: 50%;
   margin: -9px;
 }
+
+
+.ser-icon{
+	display: none !important;	
+}
+
+@media screen and (max-width: 530px){
+  .ser-bar-resize{
+  	width: 250px !important;
+  	transition: 0.5s width !important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .ser-bar-resize{
+  	width: 200px !important;
+  	transition: 0.5s width !important;
+  }
+}
+
+@media screen and (max-width: 340px){
+  .ser-bar-resize{
+  	display: none !important;
+  }
+
+  .ser-icon{
+	display: block !important;
+  }
+}
