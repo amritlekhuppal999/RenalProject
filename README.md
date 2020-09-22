@@ -1,2 +1,2 @@
 # RenalProject
-LAMP based project.
+LAMP / WAMP / XAMPP based project.
